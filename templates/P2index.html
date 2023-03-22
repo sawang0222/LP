@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+{% extends "base2.html" %}
+{% load static %}
+
+            {% block content %}  
+
+            <!-- Information Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Package 2 Informations</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/IO-service01.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                           Equipment No.50-53
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Intake/Outlet</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/navi-service2.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Equipment No.100-132
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Navigation Lock</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/SP-service03.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Equipment No.200-209
+                                        </p>
+                                    </div>
+                                </div>
+                                 <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Spillway</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/PH-service04.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Equipment No.300-318
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Powerhouse</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/RP-service05.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Equipment No.400-415
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Right Pier</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/LP-service06.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Equipment No.500-532
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Left Pier</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Information End -->
+
+            <!-- Event Log Start -->
+            <div class="faqs">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Event Logs</p>
+                        <h2>Hydro-Mechanical Equipments</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion-1">
+                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                            Intake Outlet Structure Equipments
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='050' %}">50 Log boom.</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#">51 Stop log.</a>
+                                        </div>
+                                        <div class="card-body">
+                                            52 Wheel Gate.
+                                        </div>
+                                        <div class="card-body">
+                                            53 Fish Trap
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                            Navigation Lock
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            collapse two.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                            Spillway
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="accordion-2">
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                            Powerhouse
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            sub powerhouse
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                            Right Pier
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            sub right pier
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                            Left Pier
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='500' %}">500 Fish-Trap</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='501' %}">501 3T-Monorail-Crane-A</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='502' %}">502 3T-Monorail-Crane-B</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='503' %}">503 2T-Monorail-Crane-C</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='504' %}">504 2T-Monorail-Crane-D</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='505' %}">505 Upstream-Fish-Migration-Feeder-Gate</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='506' %}">506 Upstream-Fish-Migration-Feeder-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='507' %}">507 Upstream-Fish-Migration-Feeder-Fine-Screen</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='508' %}">508 Upstream-Fish-Migration-Fish-Lock-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='509' %}">509 Upstream-Fish-Migration-Fish-Lock-Crowder</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='510' %}">510 Upstream-Fish-Migration-Fish-Lock-Service-Gate</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='511' %}">511 Upstream-Fish-Migration-Fish-Lock-Fish-Raising-Fine-Screens</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='512' %}">512 Upstream-Fish-Migration-Diffuser-Chamber-Screen</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='513' %}">513 Upstream-Fish-Migration-Diffuser-Chamber-Screen</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='514' %}">514 Upstream-Fish-Migration-Diffuser-Chamber-Gate</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='515' %}">515 Upstream-Fish-Migration-Diffuser-Chamber-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='516' %}">516 Upstream-Fish-Migration-Fish-Lock-Gate</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='517' %}">517 Upstream-Fish-Migration-Fish-Lock-Lock-Filling-Screen</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='518' %}">518 Upstream-Fish-Migration-Fish-Lock-Lock-Filling-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='519' %}">519 Upstream-Fish-Migration-Fish-Lock-Left-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='520' %}">520 Upstream-Fish-Migration-Fish-Lock-Embedded-Steel-Pipe-Lock-Filling-System</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='521' %}">521 Upstream-Fish-Migration-Fish-Lock-Embedded-Steel-Pipe-Lock-Emptying-System</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='522' %}">522 Upstream-Fish-Migration-Fish-Lock-Lock-Filling-Maintenance-Valves</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='523' %}">523 Upstream-Fish-Migration-Fish-Lock-Lock-Filling-Service-Valves</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='524' %}">524 Upstream-Fish-Migration-Fish-Lock-Lock-Emptying-Maintenance-Valves</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='525' %}">525 Upstream-Fish-Migration-Fish-Lock-Lock-Emptying-Service-Valves</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='526' %}">526 Upstream-Fish-Migration-Screen</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='527' %}">527 Upstream-Fish-Migration-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='528' %}">528 Upstream-Fish-Migration-Main-Entrance-Gate</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='529' %}">529 Upstream-Fish-Migration-Main-Entrance-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='530' %}">530 Upstream-Fish-Migration-Fish-Lock-Right-Side-Stoplog</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='531' %}">531 Upstream-Fish-Migration-Fish-Lock-Left-Side-Gates</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="{% url 'P2:P2topic' P2eqp='532' %}">532 Fish-Lock-Control-System</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event Log End -->
+            {% endblock %}  
+
+           

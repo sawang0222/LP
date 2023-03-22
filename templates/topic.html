@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends "basetopic.html" %}
+{% load humanize %}
+{% load static %}
+
+        {% block menu %}   
+        {{ P2eqp }}   <!-- show eqp number when reduce screen -->
+        {% endblock %}  
+
+        {% block showslug %}   
+        {{ showslug }}   <!-- show slug under navbar -->
+        {% endblock %}  
+
+            {% block content %}  
+
+            <!-- Topic Start -->
+            <br>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="topic"> 
+                            {% for p2txt in p2txts %}
+                                <div class="card-header">
+                                    <b>Date:</b> {{ p2txt.record|date:"D d M Y" }} &nbsp;&nbsp; <b>Time:</b> {{ p2txt.record|time:"H:i" }} &nbsp;&nbsp; 
+                                    <b>Section:</b>&nbsp;{{ p2txt.tblpts.code }}
+                                    <b>Equipment:</b>&nbsp;{{ p2txt.tblpts.struc }}&nbsp;{{ p2txt.tblpts.part }}&nbsp;{{ p2txt.tblpts.equip }} &nbsp;&nbsp; 
+                                    <b>#</b>&nbsp;{{ p2txt.tag }}
+                                </div>
+                                <div class="card-body" mb-20>
+                                    {{ p2txt.content|safe }}  <!-- fill |safe for show content only no html tag  -->
+                                </div>
+                            {% endfor %}
+                                <div class="card-footer">
+                                    <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>Add</button> </div>
+                                </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+
+            <!--  Topic End -->
+
+            {% endblock %}  
+
+           
