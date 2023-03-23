@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello VERCEL</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+
+
+            {% block content %}
+            <!-- Information Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Informations</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/PH2.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Civil Works.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Package 1</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/Radial gate.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Hydro-Mechanical Equipments.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="#"><h3>Package 2</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/Turbine fab.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Electro-Mechanical Equipments.
+                                        </p>
+                                    </div>
+                                </div>
+                                 <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Package 3</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/TL-01.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            500kV Transmission Line.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Package 4</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/CS-01.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            500kV Substation.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Collective Substation</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{% static '/img/overall-01.jpg' %}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            All Project.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="service-text" href="img/service-1.jpg"><h3>Overall</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Information End -->
+
+            {% endblock %}
 
 
            
